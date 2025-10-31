@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { supabase } from "./lib/supabaseClient";
-import ChartDisplay from "./components/ChartDisplay";
-import ChartEditor from "./components/ChartEditor";
-import EmailPrompt from "./components/EmailPrompt";
+import { supabase } from "../lib/supabaseClient";
+import ChartDisplay from "../components/ChartDisplay";
+import ChartEditor from "../components/ChartEditor";
+import EmailPrompt from "../components/EmailPrompt";
 
 export default function AnalyticsPage() {
   const [email, setEmail] = useState<string | null>(null);
